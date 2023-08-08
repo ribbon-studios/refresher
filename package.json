@@ -9,9 +9,9 @@
     "lint": "eslint 'src/**/*.ts'"
   },
   "dependencies": {
-    "@refreshly/aws": "^1.0.9",
-    "@refreshly/core": "^1.0.7",
-    "@refreshly/github": "^1.0.10",
+    "@refreshly/aws": "^1.0.14",
+    "@refreshly/core": "^1.0.12",
+    "@refreshly/github": "^1.0.15",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
