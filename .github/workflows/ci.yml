@@ -1,0 +1,37 @@
+name: Deploy
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'yarn'
+
+      - name: Install Packages
+        run: yarn install --immutable
+
+      - name: Linting
+        run: yarn lint
+
+      # - name: Coverage
+      #   run: yarn run test:coverage
+
+      - name: Refresh
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: yarn start
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.CI_ONLY_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CI_ONLY_AWS_SECRET_ACCESS_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
