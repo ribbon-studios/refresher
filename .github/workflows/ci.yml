@@ -31,7 +31,7 @@ jobs:
       #   run: yarn run test:coverage
 
       - name: Refresh
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: github.event_name == 'schedule' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
         run: yarn start
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.CI_ONLY_AWS_ACCESS_KEY_ID }}
