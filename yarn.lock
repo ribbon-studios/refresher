@@ -1578,42 +1578,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rain-cafe/logger@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@rain-cafe/logger@npm:1.0.2"
+"@rain-cafe/logger@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@rain-cafe/logger@npm:1.0.3"
   dependencies:
     chalk: ^3
-  checksum: 5a24d4eb458a06d7e22619dd4b5dde6b6e33a283312a8c0cf4cb33917c22be35efb0eb808ce1a12a4f851e1fb5aec22a3ba77495ac1f48e204c6376314082388
+  checksum: 3b032b8c9294646986219e8e68e966b485c9f5f2a4154e98a7ed53d14f6a491f9740bffcaecc7d8a660d19b5231c7dd8cc0c688ed98a875cac2a222c04a5d0ec
   languageName: node
   linkType: hard
 
-"@refreshly/aws@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@refreshly/aws@npm:1.1.0"
+"@refreshly/aws@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@refreshly/aws@npm:2.0.1"
   dependencies:
     "@aws-sdk/client-iam": ^3.386.0
-    "@refreshly/core": ^1.1.0
-  checksum: 25bcd01286ecae2bc9b4bc5e892b7859d818672be6249ba822778b1fa36aab7a79cca0d7740b5f4233262fe2148300432697c67f4f365961a3e85418ab847783
+    "@refreshly/core": ^2.0.1
+  checksum: d605af8985bdf115f33e0b70727976a3d51dd5d691714e93ec06060513c316eff8ce3e907b2f593b9989c61b7d28c8ec9ff167d972f72c25febff199fbfad659
   languageName: node
   linkType: hard
 
-"@refreshly/core@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@refreshly/core@npm:1.1.0"
+"@refreshly/core@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@refreshly/core@npm:2.0.1"
   dependencies:
-    "@rain-cafe/logger": ^1.0.2
-  checksum: f329435c13af58905419f8c08aff4f7504705878b0e95f30cbbcf281a03a9c00a2533a40c1b300a982eefb54970c20c471ab319a034c5c99104efc15a7c3f02d
+    "@rain-cafe/logger": ^1.0.3
+  checksum: a760dd77b82252690ec6038eaad8a93ee9ea3a0026d5e8e01ead211474b0e2d894b7cd82f3e7bf16d58f32a6656fa329faf7f1527e92e04a2d73b8ff967d5a3a
   languageName: node
   linkType: hard
 
-"@refreshly/github@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@refreshly/github@npm:1.1.0"
+"@refreshly/github@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@refreshly/github@npm:2.0.1"
   dependencies:
-    "@refreshly/core": ^1.1.0
+    "@refreshly/core": ^2.0.1
     libsodium-wrappers: ^0.7.11
     octokit: ^3.1.0
-  checksum: 1849b99ff7f8e2c235f0c206025795c1bbabb7745b0ab11689837c7afbacd153746519900d374c8bd0ffc5d535152c7c15132ac40270958360773f59e22ce695
+  checksum: c776891f3ff0422b58007a0c2845445f8bd06e8a101f4bf9c00272cfd221074359745ebbef31740ddd5f44f4b8d0bd619926d0559d521828dcb83cb5cfee3caa
   languageName: node
   linkType: hard
 
@@ -5221,9 +5221,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "refresher@workspace:."
   dependencies:
-    "@refreshly/aws": ^1.1.0
-    "@refreshly/core": ^1.1.0
-    "@refreshly/github": ^1.1.0
+    "@refreshly/aws": ^2.0.1
+    "@refreshly/core": ^2.0.1
+    "@refreshly/github": ^2.0.1
     "@types/jest": ^29.5.3
     "@types/node": ^20.4.8
     "@typescript-eslint/eslint-plugin": ^6.3.0
