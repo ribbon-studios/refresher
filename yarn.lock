@@ -1587,33 +1587,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@refreshly/aws@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@refreshly/aws@npm:2.0.1"
+"@refreshly/aws@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@refreshly/aws@npm:2.0.2"
   dependencies:
     "@aws-sdk/client-iam": ^3.386.0
-    "@refreshly/core": ^2.0.1
-  checksum: d605af8985bdf115f33e0b70727976a3d51dd5d691714e93ec06060513c316eff8ce3e907b2f593b9989c61b7d28c8ec9ff167d972f72c25febff199fbfad659
+    "@refreshly/core": ^2.0.2
+  checksum: f26c73656891107979f1703bd16d757d703e7b08b8a202e814f47c39e96cb88c4531c580d2843c7d2e14b29e3cf27113662f119954f649aa951ff3b6a2ed201e
   languageName: node
   linkType: hard
 
-"@refreshly/core@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@refreshly/core@npm:2.0.1"
+"@refreshly/core@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@refreshly/core@npm:2.0.2"
   dependencies:
     "@rain-cafe/logger": ^1.0.3
-  checksum: a760dd77b82252690ec6038eaad8a93ee9ea3a0026d5e8e01ead211474b0e2d894b7cd82f3e7bf16d58f32a6656fa329faf7f1527e92e04a2d73b8ff967d5a3a
+  checksum: cc92c09fae10225483207a2f43a86ec1c67b43a99146285b1fda4043e901f96b1c8a77d6e9af597e4a5ec66cc9c7f5b692a13f7004b9710ff1b57db6946ee068
   languageName: node
   linkType: hard
 
-"@refreshly/github@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@refreshly/github@npm:2.0.1"
+"@refreshly/github@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@refreshly/github@npm:2.0.2"
   dependencies:
-    "@refreshly/core": ^2.0.1
+    "@refreshly/core": ^2.0.2
     libsodium-wrappers: ^0.7.11
     octokit: ^3.1.0
-  checksum: c776891f3ff0422b58007a0c2845445f8bd06e8a101f4bf9c00272cfd221074359745ebbef31740ddd5f44f4b8d0bd619926d0559d521828dcb83cb5cfee3caa
+  checksum: 090d508764974e2273e75d7168c6a725b8b25ca4d7fe28a750033e8d96ea7afb27d2aca43a7f90f326d98d104c760fbd987b408d5fbdf2113f312651146cbc2f
   languageName: node
   linkType: hard
 
@@ -5221,9 +5221,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "refresher@workspace:."
   dependencies:
-    "@refreshly/aws": ^2.0.1
-    "@refreshly/core": ^2.0.1
-    "@refreshly/github": ^2.0.1
+    "@refreshly/aws": ^2.0.2
+    "@refreshly/core": ^2.0.2
+    "@refreshly/github": ^2.0.2
     "@types/jest": ^29.5.3
     "@types/node": ^20.4.8
     "@typescript-eslint/eslint-plugin": ^6.3.0
