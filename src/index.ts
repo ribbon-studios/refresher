@@ -9,7 +9,7 @@ Refreshly(
     prefix: 'CI_ONLY_',
     targets: [
       new GitHub.Target({
-        orgs: ['rain-cafe', 'rain-cafe-xiv', 'rain-cafe-mc'],
+        orgs: ['rain-cafe'],
       }),
     ],
   })
