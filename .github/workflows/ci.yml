@@ -15,8 +15,8 @@ jobs:
     name: Verify
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: oven-sh/setup-bun@v1
+      - uses: actions/checkout@v5
+      - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
@@ -36,8 +36,3 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.CI_ONLY_AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.CI_ONLY_AWS_SECRET_ACCESS_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      # GitHub likes to disable workflows if a repository has been inactive for >= 60 days, this circumvents that.
-      # This is incredibly silly, GitHub should add an option to disable this in the settings or a yml file.
-      # https://github.com/gautamkrishnar/keepalive-workflow
-      - uses: gautamkrishnar/keepalive-workflow@v1
