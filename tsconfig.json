@@ -1,12 +1,13 @@
 {
   "ts-node": {
-    "files": true
+    "files": true,
   },
   "compilerOptions": {
     "resolveJsonModule": true,
     "lib": ["ES2022"],
     "module": "NodeNext",
-    "target": "ES2022"
+    "moduleResolution": "bundler",
+    "target": "ES2022",
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist"],
 }
