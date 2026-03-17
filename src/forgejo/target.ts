@@ -20,6 +20,7 @@ export class ForgejoTargetModule extends TargetModule {
 
   async target(keyInfos: KeyInfo[]): Promise<void> {
     await createOrUpdateOrgSecrets({
+      url: this.options.url,
       keyInfos,
       token: this.options.token,
       orgs: this.options.orgs,
